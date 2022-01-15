@@ -71,12 +71,13 @@ body{
      justify-content: center;
  }
 .product{
+    display: flexbox grid;
+    grid-template-columns: repeat(3, 1fr);
     width: 33%;
     margin-right: 3%;
     padding: 10px;
     border-radius: 10px;
-    display: grid;
-    grid-template-columns: repeat(9, 3fr);
+    
 }
 .products-banner img{
     height: 225px;

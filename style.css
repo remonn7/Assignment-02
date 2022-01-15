@@ -28,7 +28,22 @@ body{
     border: 1px solid red;
     border-radius: 16px;
 }
-.products{
+
+.logo img{
+    width: 80px;
+    height: 50px;
+    margin-bottom: 18px;
+    padding-right: 80px;
+}
+.logo{
+    margin-left: 80px;
+}
+
+.product{
+    width: 33%;
+    margin-right: 3%;
+    padding: 10px;
+    border-radius: 10px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 }
@@ -47,4 +62,19 @@ body{
 }
 .fa-star.filled{
     color: yellow;
+}
+.last-products{
+    width: 500px;
+    padding: 0% 0% 0% 0%;
+}
+.featured{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer{
+    background-color: rgb(9, 10, 83);
+    padding-bottom: 2%;
+     color: whitesmoke;
+    text-align: center;
 }

@@ -65,7 +65,11 @@ body{
 .logo{
     margin-left: 80px;
 }
-
+ .section-title{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
 .product{
     width: 33%;
     margin-right: 3%;
@@ -104,4 +108,20 @@ footer{
     padding-bottom: 2%;
      color: whitesmoke;
     text-align: center;
+}
+
+@media screen and (max-width: 688px) {
+    .All{
+        width: 100%;
+    }
+    .top-header{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .hr{
+        width: 100%;
+    }
+    .logo{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    
 }

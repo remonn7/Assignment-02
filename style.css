@@ -1,0 +1,50 @@
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header-title{
+    font-size: 45px;
+    padding-left: 8px;
+}
+
+.container{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-text-area{
+    width: 50%;
+    margin-left: 4%;
+}
+
+.button{
+    text-decoration: none;
+    width: 30px;
+    padding: 6px 19px;
+    background-color: rgb(240, 47, 127);
+    color: white;
+    border: 1px solid red;
+    border-radius: 16px;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.products-banner img{
+    height: 225px;
+    width: 200px;
+}
+.products-rating{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fa-star{
+    font-size: 12px;
+}
+.fa-star.filled{
+    color: yellow;
+}

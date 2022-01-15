@@ -1,8 +1,35 @@
+
 body{
     font-family: 'Poppins', sans-serif;
 }
+.top-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 60px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.nav-bar{
+    display: flex;
+}
+.nav-bar li{
+    list-style: none;
+    margin: 12px;
+}
 
-.header-title{
+.nav-bar li a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+.fa{
+    margin: 12px;
+}
+
+.header-title2{
     font-size: 45px;
     padding-left: 8px;
 }
@@ -45,7 +72,7 @@ body{
     padding: 10px;
     border-radius: 10px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(9, 3fr);
 }
 .products-banner img{
     height: 225px;

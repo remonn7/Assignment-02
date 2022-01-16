@@ -1,12 +1,16 @@
-
-body{
+*{
     font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* header navbar start */
 .top-header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 60px;
+    padding: 20px 60px;
 }
 .icon{
     display: flex;
@@ -24,14 +28,30 @@ body{
     text-decoration: none;
     color: black;
     font-size: 20px;
-}
-.fa{
-    margin: 12px;
+    padding: 5px 12px;
 }
 
+.nav-bar li a:hover{
+    background-color: #E02C6D;
+    border-radius: 20px;
+    color: wheat;
+}
+
+.fa{
+    margin-right: 12px;
+}
+
+
+/* header navbar end */
+
+/* header banner */
 .header-title2{
     font-size: 45px;
     padding-left: 8px;
+}
+
+.text{
+    margin-bottom: 5%;
 }
 
 .container{
@@ -39,11 +59,19 @@ body{
     height: 90vh;
     align-items: center;
     justify-content: center;
+    margin-bottom: 5%;
 }
 
-.header-text-area{
+.header-content{
     width: 50%;
     margin-left: 4%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.first-pic{
+    width: 350px;
 }
 
 .button{
@@ -56,73 +84,296 @@ body{
     border-radius: 16px;
 }
 
+/* header banner end */
+
+/* company logo start */
+
 .logo img{
     width: 80px;
-    height: 50px;
-    margin-bottom: 18px;
-    padding-right: 80px;
+    height: 80px;
+    margin-right: 5%;
 }
+
+.logo-section{
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .logo{
-    margin-left: 80px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 8%;
 }
- .section-title{
-     display: flex;
-     align-items: center;
-     justify-content: center;
- }
-.product{
-    display: flexbox grid;
-    grid-template-columns: repeat(3, 1fr);
-    width: 33%;
-    margin-right: 3%;
-    padding: 10px;
-    border-radius: 10px;
-    
+
+/* company logo end */
+
+/* product start */
+
+.best-deal{
+    margin-bottom: 8%;
 }
-.products-banner img{
-    height: 225px;
-    width: 200px;
-}
-.products-rating{
+
+.section-title{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    margin-bottom: 5%;
+}
+
+.product-box{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-column-gap: 44px;
+}
+
+.product{
+    border: 2px solid white; 
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.product img{
+    width: 300px;
+    height: 256px;
+    padding: 17px;
+    border-radius: 5px;
+}
+
+
+.product-name{
+    margin: 0%;
+    padding: 0px 17px;
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.product-price{
+    margin: 0%;
+    padding: 0px 17px;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.rank{
+    padding: 0 17px;
 }
 
 .fa-star{
-    font-size: 12px;
+    color: orange;
 }
-.fa-star.filled{
-    color: yellow;
+
+.see-more{
+    margin-right: 5%;
+    padding-top: 40px;
+    color: #E02C6D;
+    font-weight: 700;
+    font-size: 20px;
+    text-decoration: none;
+    float: right;
 }
-.last-products{
-    width: 500px;
-    padding: 0% 0% 0% 0%;
+
+/* product end */
+
+/* product feature start */
+
+.product-feature{
+    display: grid;
+    margin-top: 100px;
+    background-color: white;
+    border: 40px solid white;
+    border-radius: 15px;
+    margin-bottom: 50px;
 }
-.featured{
+
+.feature-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3%;
+}
+
+.feature{
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+}
+
+.feature-details{
+    text-align: center;
+
+}
+.feature h1{
+    font-size: 38px;
+    font-weight: 900;
+    margin: 3%;
+}
+
+.discription{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.feature a{
+    color: white;
+    text-decoration: none; 
+    background-color: #E02C6D;
+    padding: 10px 24px; 
+    border: 0px solid;
+    border-radius: 41px;
+}
+
+/* product feature end */
+
+/* footer start */
+footer{
+    background-color: rgb(9, 10, 83);
+    padding-bottom: 8%;
+    color: white;
+    text-align: center;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-footer{
-    background-color: rgb(9, 10, 83);
-    padding-bottom: 2%;
-     color: whitesmoke;
-    text-align: center;
+
+.footer-txt{
+    padding-top: 5%;
 }
 
+.social-link{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-link i{
+    font-size: 22px;
+}
+
+/* footer end */
+
+
+/* mob responsive start */
 @media screen and (max-width: 688px) {
-    .All{
-        width: 100%;
-    }
-    .top-header{
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .hr{
-        width: 100%;
-    }
-    .logo{
-        grid-template-columns: repeat(3, 1fr);
+    
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
     }
     
+    /* header navbar */
+    .top-header{
+        padding-top: 15px;
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .nav-bar{
+        display: none;
+    }
+
+    /* header navbar end */
+
+    /* header banner start */
+    .container{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+    .header-content{
+        margin: auto;
+        width: 100%;
+        padding: 15px;
+        margin-top: 30px;
+        text-align: center;
+        }
+    
+    
+    .first-pic{
+        width: 250px;
+        height: 250px;
+    }
+        
+        
+    .header-content h1{
+        font-size: 38px;
+        font-weight: 900;
+    }
+
+    /* header banner end */
+
+    /* company logo start */
+    .logo-section{
+        width: 100%;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    /* company logo end */
+
+    /* product */
+
+    .best-deal{
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .product-box{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 5px;
+    }
+
+    /* product end */
+
+    /* product feature */
+
+    .feature-box{
+        display: flex;
+        flex-direction: column;
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+
+    .feature img{
+        width: 100%;
+        
+    }
+
+
+    .feature-details h1{
+        font-size: 25px;
+    }
+
+    /* product feature end */
+
+    /* footer start */
+
+    footer{
+        padding: 25px;
+    }
+
+    .social-link{
+        margin-top: 3%;
+    }
+
+    /* footer end */
+     
 }
+/* mob responsive end */
